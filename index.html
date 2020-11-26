@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        background-color: gray;
+      }
+      .circle {
+        width: 384px;
+        height: 384px;
+        display: inline-block;
+        margin: 16px;
+        animation: spin 0.75s linear infinite;
+      }
+      .in {
+        background-image: url(images/circle.png);
+      }
+      .out {
+        background-image: url(images/circle_out.png);
+      }
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle in"></div>
+    <div class="circle out"></div>
+  </body>
+</html>
